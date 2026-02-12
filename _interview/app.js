@@ -20,3 +20,6 @@ console.log(tinderUser);
  console.log(Object.values(tinderUser)); 
 */
 
+// when we are in node enviroment this is refer to empty object
+
+// in browser global object is window object
