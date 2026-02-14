@@ -22,7 +22,7 @@ for (const greet of greetings) {
 }
 
 
-// Maps  konwn for unique value 
+// Maps  konwn for unique key 
 const map = new Map()
 map.set('IN', "India")
 map.set('USA', "United States of America")
@@ -36,7 +36,7 @@ for (const [key , value] of map) {
 
 }
 
-// Object is not iterable but Map is iterable
+// Object is not iterable but Map is iteraable
 const myObject = {
   game1: 'NFS',
   game2: 'spiderman'
@@ -46,3 +46,8 @@ for (const [key, value] of myObject) {
   console.log(key, ':-', value);
   
 }
+
+
+
+
+

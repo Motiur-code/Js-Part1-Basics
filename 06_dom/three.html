@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body style="background-color: #212121 ;color
+: white
+ ;">
+  
+</body>
+<script>
+  const div = document.createElement('div')
+  console.log(div);
+  div.className = "main"
+  div.id = Math.round (Math.random() * 10 + 1)
+  div.setAttribute("title","generated title")  //direct set the value 
+  div.style.backgroundColor = "green"
+  div.style.padding = "12px"
+  // why not print on page bcos div is in memory
+  // how to attached on page we have to tell the document to atached this page
+  // div.innerText = "Chai aur code"  //optimization here innerText override the value which value is present he select and bring then set
+  const addText = document.createTextNode("Chai aur code")
+  div.appendChild(addText)
+
+  document.body.appendChild(div)
+</script>
+</html>
