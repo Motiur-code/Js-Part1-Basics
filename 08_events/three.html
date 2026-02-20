@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Start Stop Interval</title>
+</head>
+
+<body>
+  <h1>Chai or Javascript</h1>
+
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+
+<script>
+
+let intervalId = null;   // store interval id
+
+// function to run repeatedly
+function sayDate() {
+  console.log("Hi", new Date().toLocaleTimeString());
+}
+
+// START button click
+document.getElementById("start").addEventListener("click", function () {
+
+  if (intervalId === null) {   // prevent multiple intervals
+    intervalId = setInterval(sayDate, 1000);
+  }
+
+});
+
+// STOP button click
+document.getElementById("stop").addEventListener("click", function () {
+
+  clearInterval(intervalId);
+  intervalId = null;
+
+});
+
+</script>
+</body>
+</html>
